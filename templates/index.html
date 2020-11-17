@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gold</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link
+      rel="icon"
+      href="https://cdn.discordapp.com/attachments/742148980682784793/777359687779614780/image0.jpg"
+    />
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+  </head>
+  <body>
+    <!-- Top navigation -->
+    <div class="topnav">
+      <!-- Centered link -->
+      <div class="topnav-centered">
+        <a href="/puck">Puck</a>
+      </div>
+
+      <!-- Left-aligned links (default) -->
+      <a href="/home" class="active">Home</a>
+      <a href="/about">About</a>
+
+      <!-- Right-aligned links -->
+      <div class="topnav-right">
+        <a href="/github">GitHub</a>
+      </div>
+    </div>
+    <div class="bg">
+      <div class="centered">Gold</div>
+      <div class="desc">Welcome to my webpage!</div>
+    </div>
+  </body>
+</html>
