@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
 * {
   margin: 0;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 
@@ -63,33 +63,29 @@
   }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 .centered {
   text-align: center;
   font-size: 100px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #027fd3;
 }
 
-body, html {
+body,
+html {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .bg {
-  
-  background-image: url("https://barnimages.com/wp-content/uploads/2018/04/20170904-barnimages-003.jpg");
-
-
-  height: 100%;
-
-  
-  background-position: center;
+  background: url("https://barnimages.com/wp-content/uploads/2018/04/20170904-barnimages-003.jpg");
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .am {
-  color:#027fd3;
+  color: #027fd3;
   text-align: center;
 }
 
@@ -111,7 +107,8 @@ body, html {
 }
 
 @media (max-width: 767px) {
-  .text, .images {
+  .text,
+  .images {
     float: none;
     width: 100%;
   }
@@ -119,5 +116,40 @@ body, html {
 
 .titles {
   font-size: 23px;
-  color:#80bbe2;
+  color: #80bbe2;
+}
+
+.text2 {
+  float: right;
+  width: 70%;
+  color: #80bbe2;
+  margin-right: 5.3in;
+  margin-top: -5in;
+}
+
+.images2 {
+  float: right;
+  width: 30%;
+}
+
+@media (max-width: 767px) {
+  .text2,
+  .images2 {
+    float: right;
+    width: 100%;
+  }
+}
+
+.titles2 {
+  font-size: 23px;
+  color: #80bbe2;
+  margin-right: 1.5in;
+}
+
+.descs2 {
+  float: left;
+  color: #80bbe2;
+  width: 30%;
+  text-align: left;
+  margin-left: 8.5in;
 }
