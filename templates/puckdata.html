@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>PuckData</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styled.css') }}"
+    />
+    
+    <link
+      rel="icon"
+      href="https://cdn.discordapp.com/attachments/742148980682784793/777359687779614780/image0.jpg"
+    />
+    
+  </head>
+  <body>
+    <div class="topnav">
+
+      <div class="topnav-centered">
+        <a href="/puck">Puck</a>
+      </div>
+
+      <a href="/home" class="active">Home</a>
+      <a href="/about">About</a>
+
+      <div class="topnav-right">
+        <a href="/github">GitHub</a>
+      </div>
+    </div>
+    <h1>
+      Gold's Projects
+    </h1>
+    <table id="project">
+        <tr>
+            <th>Weather site</th>
+            <th>Not started yet.</th>
+        </tr>
+      <tr>
+        <th><a href="/home/puck">Puck Python Uptime</a></th>
+        <th id="uptime">insert data here</th>
+        <script
+          type="text/javascript"
+          src="{{ url_for('static', filename='puckdata.json') }}"
+        ></script>
+        <script
+          type="text/javascript"
+          src="{{ url_for('static', filename='script.js') }}"
+        ></script>
+      </tr>
+      <tr>
+        <th><a href="/home/music">Puck JavaScript Uptime</a></th>
+        <th id="uptime2">Pending data sync...</th>
+      </tr>
+    </table>
+    <footer>
+        Puck bot logs are found <a href="/home/logs">here</a>
+    </footer>
+  </body>
+</html>
